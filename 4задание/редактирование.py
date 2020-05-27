@@ -18,30 +18,30 @@ while score != 6:
          cur.execute("UPDATE info SET name=? WHERE id=?", (uName, uId))
          conn.commit()
  elif score == 2:
-     uId = input('id')
+     uId = input('Введите id: ')
      uDate = input('Введите дату рождения: ')
      with conn:
          cur = conn.cursor()
-         cur.execute("UPDATE info SET name=? WHERE id=?", (uDate, uId))
+         cur.execute("UPDATE info SET date=? WHERE id=?", (uDate, uId))
          conn.commit()
  elif score == 3:
-     uId = input('id')
+     uId = input('Введите id: ')
      uMob = input('Введите мобильный: ')
      with conn:
          cur = conn.cursor()
-         cur.execute("UPDATE info SET name=? WHERE id=?", (uMob, uId))
+         cur.execute("UPDATE info SET mobil=? WHERE id=?", (uMob, uId))
          conn.commit()
  elif score == 4:
-     uId = input('id')
+     uId = input('Введите id: ')
      uToils = input('Введите соц. сеть: ')
      with conn:
          cur = conn.cursor()
-         cur.execute("UPDATE info SET name=? WHERE id=?", (uToils, uId))
+         cur.execute("UPDATE info SET toils=? WHERE id=?", (uToils, uId))
          conn.commit()
  elif score == 5:
-     uId = input('id')
+     uId = input('Введите id: ')
      uAddress = input('Введите адрес: ')
      with conn:
          cur = conn.cursor()
-         cur.execute("UPDATE info SET name=? WHERE id=?", (uAddress, uId))
+         cur.execute("UPDATE info SET address=? WHERE id=?", (uAddress, uId))
          conn.commit()
