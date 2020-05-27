@@ -20,7 +20,7 @@ while score != 7:
  elif score == 5:
      import вывод_таблицы
  elif score == 6:
-     print('Пока в разработке')
+     import Вывод в XML
  elif score == 7:
      print('-----------| До свидания |-------------')
  else:
