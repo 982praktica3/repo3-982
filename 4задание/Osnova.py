@@ -10,17 +10,17 @@ while score != 7:
  print('|7. Выход                             |')
  score = int(input('|Введите номер необходимого пункта: '))
  if score == 1:
-    import добавление
+    import dobavlenie
  elif score == 2:
-    import удаление
+    import udalenie
  elif score == 3:
-    import редактирование
+    import redaktirovanie
  elif score == 4:
-    import поиск
+    import poisk
  elif score == 5:
-     import вывод_таблицы
+     import vyvod_tablitsy
  elif score == 6:
-     import Вывод_в_XML
+     import Vyvod_v_XML
  elif score == 7:
      print('-----------| До свидания |-------------')
  else:
