@@ -150,17 +150,6 @@ def XML():
  sql_fetch(con)
  return
 
-
-def Sozd():
- conn = sqlite3.connect("pr.db")
- cursor = conn.cursor()
- # Создание таблицы
- cursor.execute("""CREATE TABLE info
-                   (id INTEGER PRIMARY KEY AUTOINCREMENT, name text, date text,
-                   mobil text, toils text, address text)
-                """)
-
-Sozd() 
 while score != 7:
  print('---------------------------------------')
  print('|1. Добавление строки                 |')
