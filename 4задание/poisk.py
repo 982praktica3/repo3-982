@@ -1,10 +1,12 @@
 import sqlite3
+def der():
+    
+ conn = sqlite3.connect("pr.db")
 
-conn = sqlite3.connect("pr.db")
-# conn.row_factory = sqlite3.Row
-cursor = conn.cursor()
+ cursor = conn.cursor()
 
-sql = "SELECT * FROM info WHERE name=?"
+ sql = "SELECT * FROM info WHERE name=?"
 
-cursor.execute(sql, [(input('Введите ФИО: '))])
-print(cursor.fetchall())
+ cursor.execute(sql, [(input('Введите ФИО: '))])
+ print(cursor.fetchall())
+ return
