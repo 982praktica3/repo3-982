@@ -1,4 +1,10 @@
 score=0
+import dobavlenie
+import vyvod_tablitsy
+import Vyvod_v_XML
+import udalenie
+import redaktirovanie
+import poisk
 while score != 7:
  print('---------------------------------------')
  print('|1. Добавление строки                 |')
@@ -10,17 +16,17 @@ while score != 7:
  print('|7. Выход                             |')
  score = int(input('|Введите номер необходимого пункта: '))
  if score == 1:
-    import dobavlenie
+    dobavlenie.dobav()
  elif score == 2:
-    import udalenie
+    udalenie.udal()
  elif score == 3:
-    import redaktirovanie
+    redaktirovanie.redak()
  elif score == 4:
-    import poisk
+    poisk.der()
  elif score == 5:
-     import vyvod_tablitsy
+    vyvod_tablitsy.vyvod_tab()
  elif score == 6:
-     import Vyvod_v_XML
+    Vyvod_v_XML.XML()
  elif score == 7:
      print('-----------| До свидания |-------------')
  else:
