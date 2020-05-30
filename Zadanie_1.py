@@ -1,4 +1,3 @@
-from random import randint
-A = [randint(-100, 100) for i in range(20)]
-print(A)
+print("Введите цифры из которых будет найден минимум")
+A = [int(el) for el in input().split()]
 print(min(A))
