@@ -34,4 +34,4 @@ def Zad4():
         elif score == 7:
             return
         else:
-            print("Введите коректный номер")
+            print("Введите корректный номер")
